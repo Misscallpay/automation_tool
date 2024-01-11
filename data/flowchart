@@ -1,0 +1,26 @@
+digraph Flowchart {
+	Start [label=Start]
+	ConnectMongoDB [label="Connect to MongoDB
+Fetch data using Python script"]
+	DesignStreamlit [label="Design Streamlit app UI
+Create interactive visualizations"]
+	DevelopScripts [label="Develop scripts for
+Data manipulation and preprocessing"]
+	CreateFunctionality [label="Create functionality for
+Detailed reports in Streamlit app"]
+	ImplementAutomation [label="Implement automated scheduling
+for data updates"]
+	Testing [label="Conduct thorough testing of the dashboard
+Handle errors and resolve issues"]
+	Deploy [label="Deploy the app on the organization's server
+Internal access for users"]
+	End
+	Start -> ConnectMongoDB
+	ConnectMongoDB -> DesignStreamlit
+	DesignStreamlit -> DevelopScripts
+	DevelopScripts -> CreateFunctionality
+	CreateFunctionality -> ImplementAutomation
+	ImplementAutomation -> Testing
+	Testing -> Deploy
+	Deploy -> End
+}
